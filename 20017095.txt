@@ -1,0 +1,51 @@
+Mailbox                         Instructions                         Description
+00                                   901                                         input d3
+01                                   388                                         Store in MB 88
+02                                   901                                         input d4
+03                                   389                                         Store in MB 89
+04                                   901                                         Input d6 
+05                                   390                                         Store in MB 90
+06                                   288                                         Subtract d3 from d6
+07                                   814                                         Branch to MB 14
+08                                   588                                         Load d3 
+09                                   391                                         Store temporarily in 391
+10                                   590                                         Load d6
+11                                   388                                         Store d6 in MB 88
+12                                   591                                         Load temporarily 
+13                                   390                                         Store d3 in MB 90
+14                                   590                                         Load d3
+15                                   289                                         Subtract d4 
+16                                   823                                         Branch to MB 23
+17                                   589                                         Load d4
+18                                   391                                         Store d4 temporarily
+19                                   590                                         Load d6
+20                                   389                                         Store d4 in MB 89
+21                                   591                                         Load temporarily
+22                                   390                                         Store d6 in MB 90
+23                                   590                                         Load d6
+24                                   902                                         Output (biggest)
+25                                   588                                         Load d3
+26                                   289                                         Subtract d4
+27                                   839                                         Branch MB 39
+28                                   589                                         Load d4
+29                                   902                                         Output(medium) for first scenario
+30                                   588                                         Load d3    
+31                                   902                                         Output (smallest) 
+32                                   590                                         Load MB 90
+33                                   190                                         Add d6 to d6
+34                                   365                                         Store result temporarily in MB 65
+35                                   565                                         Load MB 65
+36                                   188                                         Add result to d3
+37                                   902                                         Output result
+38                                   000                                         Halt
+39                                   588                                         Load d3
+40                                   902                                         Output(medium) for second scenario
+41                                   589                                         Load d4
+42                                   902                                         Output (smallest) 
+43                                   590                                         Load d6
+44                                   190                                         Add d6 to d6
+45                                   366                                         Store result temporarily in MB 66
+46                                   566                                         Load MB 65
+47                                   189                                         Add result to d4
+48                                   902                                         Display
+49                                  000                                            Halt
